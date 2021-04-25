@@ -70,3 +70,30 @@ header article::after {
     background: black;
     opacity: .6;
 }
+
+/***************
+Welcome
+****************/
+.welcome {
+    height: 65vh;
+    text-align: center;
+    padding: 100px;
+    background: var(--lightgray);
+}
+.welcome h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.welcome h2::after {
+    content: "";
+    display: block;
+    width: 5%;
+    margin: auto;
+    height: 3px;
+    background:var(--orange);
+    margin-top: 20px;
+}
+.welcome p {
+    margin-top: 30px;
+    font-size: 1.1rem;
+}
