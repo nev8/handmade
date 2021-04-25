@@ -7,6 +7,9 @@
     --white: #fff;
     --padding: 70px 0;
 }
+/***************
+Basic style
+****************/
 body {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -19,4 +22,51 @@ body {
     margin: 0;
 }
 
-
+/***************
+Header
+****************/
+header {
+    background-image: url(IMG/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+header h1 {
+    background: black;
+    color: white;
+    font-weight: 900;
+    display: inline-block;
+    width: 27%;
+    text-align: center;
+    line-height: 90px;
+    height: 100px;
+    margin: 0 0 100px 150px;
+    font-size: 4rem;
+}
+header article ul {
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--orange);
+    width: 50%;
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    margin: -70px 0 50px 150px;
+}
+header article ul li a {
+    text-decoration: none;
+    color: white;
+}
+header article ul li a:hover {
+    color: black;
+}
+header article::after {
+    content: "";
+    display: block;
+    height: 15px;
+    background: black;
+    opacity: .6;
+}
