@@ -21,7 +21,20 @@ body {
     padding: 0;
     margin: 0;
 }
-
+h4::after {
+    content: "";
+    display: block;
+    width: 5%;
+    margin: auto;
+    height: 3px;
+    background:var(--orange);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
 /***************
 Header
 ****************/
@@ -81,7 +94,7 @@ Welcome
     background: var(--lightgray);
 }
 .welcome h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 900;
 }
 .welcome h2::after {
@@ -96,4 +109,33 @@ Welcome
 .welcome p {
     margin-top: 30px;
     font-size: 1.1rem;
+}
+
+/***************
+Services
+****************/
+.services {
+    padding: 100px;
+    text-align: center;
+}
+.services h4 {
+    font-size: 2rem;
+}
+.services article {
+    display: flex;
+    justify-content: space-between;
+}
+.services article div {
+    flex: 0 0 28%;
+}
+.services article div p {
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+}
+.services article div button {
+    background: var(--orange);
+    color: white;
+    padding: 15px 70px;
+    border: none;
+    text-transform: uppercase;
 }
