@@ -35,6 +35,14 @@ h5 {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
+button {
+    background: var(--orange);
+    color: white;
+    padding: 15px 70px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 /***************
 Header
 ****************/
@@ -132,10 +140,33 @@ Services
     font-size: 1.1rem;
     margin-bottom: 35px;
 }
-.services article div button {
-    background: var(--orange);
-    color: white;
-    padding: 15px 70px;
-    border: none;
-    text-transform: uppercase;
+/***************
+Works
+****************/
+.works {
+    height: 65vh;
+    text-align: center;
+    background: var(--lightgray);
+    padding: 100px 0 100px 0;
+}
+.works h4 {
+    font-size: 2rem;
+}
+.works article {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 100px 100px;
+    background: var(--lightgray);
+}
+.works article div {
+    flex: 0 0 20%;
+}
+.works article div img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.works p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
